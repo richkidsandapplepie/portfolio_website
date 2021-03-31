@@ -1,24 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
+import RecentProjects from './components/recent_projects';
+import Skills from './components/skills';
+import Contact from './components/contact';
+import { NavLink } from 'react-router-dom';
 
 function App() {
+  const HomePage = () => {
+    return (
+      <p>hi there</p>
+    );
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <div className="container">
+          <div className="row">
+            <div className="col-3" align="left">
+              <div><NavLink to="./recent_projects">Recent Projects</NavLink></div>
+              <div><NavLink to="./skills">Skills</NavLink></div>
+              <div><NavLink to="./contact">Contact</NavLink></div>
+            </div>
+            <div className="col-9">
+              <Switch>
+                <Route path='/home' component={HomePage} />
+                <Route path='/recent_projects' component={RecentProjects} />
+                <Route path='/skills' component={Skills} />
+                <Route path='/contact' component={Contact} />
+                <Redirect to='/home' />
+              </Switch>
+            </div>
+          </div>
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
