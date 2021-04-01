@@ -16,11 +16,19 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <div className="container">
-          <div className="row">
-            <div className="col-3" align="left">
-              <div><NavLink to="./recent_projects">Recent Projects</NavLink></div>
-              <div><NavLink to="./skills">Skills</NavLink></div>
-              <div><NavLink to="./contact">Contact</NavLink></div>
+          <div className="row main-row">
+            <div className="col-3 first-col">
+              <div className="link-container">
+                <NavLink className="nav-link" to="./recent_projects" activeStyle={{
+    color: "white"
+  }}>Recent Projects</NavLink>
+                <NavLink className="nav-link" to="./skills" activeStyle={{
+    color: "white"
+  }}>Skills</NavLink>
+                <NavLink className="nav-link" to="./contact" activeStyle={{
+    color: "white"
+  }}>Contact</NavLink>
+              </div>
             </div>
             <div className="col-9">
               <Switch>
