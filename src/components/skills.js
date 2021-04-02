@@ -1,6 +1,6 @@
 import React from 'react'
 import { Fade, Stagger } from 'react-animation-components';
-import '../skills.css';
+import '../css/skills.css';
 
 const images = [
   <img src="https://img.icons8.com/color/144/000000/html-5.png" />,

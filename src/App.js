@@ -1,4 +1,4 @@
-import './App.css';
+import './css/App.css';
 import { BrowserRouter } from 'react-router-dom';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import RecentProjects from './components/recent_projects';
@@ -9,28 +9,30 @@ import { NavLink } from 'react-router-dom';
 function App() {
   const HomePage = () => {
     return (
-      <p>hi there</p>
+      <div className="home-container">I'm a software developer.</div>
     );
   }
   return (
     <BrowserRouter>
       <div className="App">
         <div className="container">
+          <div className="title">richard kwon / web developer</div>
+          <div className="link-container">
+            <NavLink className="nav-link" to="/home" activeStyle={{
+              color: "white"
+            }}>about</NavLink>
+            <NavLink className="nav-link" to="./recent_projects" activeStyle={{
+              color: "white"
+            }}>recent projects</NavLink>
+            <NavLink className="nav-link" to="./skills" activeStyle={{
+              color: "white"
+            }}>skills</NavLink>
+            <NavLink className="nav-link" to="./contact" activeStyle={{
+              color: "white"
+            }}>contact</NavLink>
+          </div>
           <div className="row main-row">
-            <div className="col-3 first-col">
-              <div className="link-container">
-                <NavLink className="nav-link" to="./recent_projects" activeStyle={{
-    color: "white"
-  }}>Recent Projects</NavLink>
-                <NavLink className="nav-link" to="./skills" activeStyle={{
-    color: "white"
-  }}>Skills</NavLink>
-                <NavLink className="nav-link" to="./contact" activeStyle={{
-    color: "white"
-  }}>Contact</NavLink>
-              </div>
-            </div>
-            <div className="col-9">
+            <div className="col">
               <Switch>
                 <Route path='/home' component={HomePage} />
                 <Route path='/recent_projects' component={RecentProjects} />

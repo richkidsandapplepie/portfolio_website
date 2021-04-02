@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+.App {
+  color: white;
+  margin-top: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-row {
+ margin-top: 20px; 
+}
+
+.header-row {
+  margin-bottom: 0px;
+}
+
+.nav-link {
+  color: rgb(173, 173, 173);
+  /* font-family: 'Noto Sans', sans-serif; */
+}
+
+.nav-link:hover {
+  color: rgb(255, 255, 255);
+}
+
+.nav-link {
+  display: inline;
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.home-container {
+  margin-top: 20%;
+  text-align: center;
+}
