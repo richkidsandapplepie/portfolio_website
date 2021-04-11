@@ -1,0 +1,32 @@
+.skills-container {
+  margin-top: 150px;
+  display: flex;
+}
+
+img {
+  padding: 5px;
+}
+
+.skill-container {
+  position: relative;
+  text-align: center;
+}
+
+.label {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+}
+
+.skill-container:hover .label {
+  display: block;
+}
+
+.skill-container:hover img {
+  opacity: 0.1;
+}

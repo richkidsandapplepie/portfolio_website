@@ -14,7 +14,7 @@ const PROJECTS = [
     image: "./images_1.jpg"
   },
   {
-    title: "what's your fitness",
+    title: "whatsyourfitness",
     overview: "fitness calculator",
     image: "./images_1.jpg"
   }
@@ -31,7 +31,13 @@ class RecentProjects extends Component {
 
   renderSelectedProject(project) {
     if (project) {
-      return (<div>success</div>);
+      return (
+        <>
+          <div>{project.title}</div>
+          <div>{project.image}</div>
+          <div>{project.overview}</div>
+        </>
+      );
     } else {
       return (<div>select a project</div>);
     }
@@ -50,6 +56,8 @@ class RecentProjects extends Component {
           <div className="row">
             <div className="col-md-3 list">
               <div className="list-item" onClick={() => this.selectProject('moviebuff')}>moviebuff</div>
+              <div className="list-item" onClick={() => this.selectProject('tallyup')}>tallyup</div>
+              <div className="list-item" onClick={() => this.selectProject('whatsyourfitness')}>what's your fitness</div>
             </div>
             <div className="col-md-9">
               {this.renderSelectedProject(this.state.selectedProject)}
