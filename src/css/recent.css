@@ -1,14 +1,12 @@
-.card-title {
-  margin-top: 20px;
-  text-align: center;
+.list-container {
+  margin-top: 150px;
 }
 
-.card-info {
-  margin-bottom: 50px;
-  text-align: center;
+.list-item {
+  color:white;
 }
 
-/* .img-container {
-  padding-right: 200px;
-  padding-left: 200px;
-} */
+.list-item:hover {
+  color:blanchedalmond;
+  cursor: crosshair;
+}
