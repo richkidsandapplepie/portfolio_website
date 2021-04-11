@@ -1,1 +1,14 @@
+.card-title {
+  margin-top: 20px;
+  text-align: center;
+}
 
+.card-info {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* .img-container {
+  padding-right: 200px;
+  padding-left: 200px;
+} */
