@@ -1,54 +1,73 @@
-import React from 'react'
-import { Fade, Stagger } from 'react-animation-components';
+import React, { Component } from 'react'
+import { Fade } from 'react-animation-components';
 import '../css/skills.css';
 
-const images = [
-  <img src="https://img.icons8.com/color/144/000000/html-5.png" />,
-  <img src="https://img.icons8.com/color/144/000000/css3.png" />,
-  <img src="https://img.icons8.com/color/144/000000/javascript.png" />,
-  <img src="https://img.icons8.com/color/144/000000/bootstrap.png" />,
-  <img src="https://img.icons8.com/color/144/000000/react-native.png" />,
-  <img src="https://img.icons8.com/color/144/000000/nodejs.png" />,
-  <img src="https://img.icons8.com/color/144/000000/flutter.png" />
-];
+class Skills extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      tech: [
+        {
+          label: 'html',
+          img: "https://img.icons8.com/color/144/000000/html-5.png"
 
-function Skills() {
-  return (
-    <>
-      <Fade in>
-        <div className="skills-container">
-          <div className="skill-container">
-            <div className="label">html</div>
-            <img src="https://img.icons8.com/color/144/000000/html-5.png" />
-          </div>
-          <div className="skill-container">
-            <div className="label">css</div>
-            <img src="https://img.icons8.com/color/144/000000/css3.png" />
-          </div>
-          <div className="skill-container">
-            <div className="label">javascript</div>
-            <img src="https://img.icons8.com/color/144/000000/javascript.png" />
-          </div>
-          <div className="skill-container">
-            <div className="label">bootstrap</div>
-            <img src="https://img.icons8.com/color/144/000000/bootstrap.png" />
-          </div>
-          <div className="skill-container">
-            <div className="label">react / react native</div>
-            <img src="https://img.icons8.com/color/144/000000/react-native.png" />
-          </div>
-          <div className="skill-container">
-            <div className="label">node.js</div>
-            <img src="https://img.icons8.com/color/144/000000/nodejs.png" />
-          </div>
-          <div className="skill-container">
-            <div className="label">flutter</div>
-            <img src="https://img.icons8.com/color/144/000000/flutter.png" />
-          </div>
+        },
+        {
+          label: 'css',
+          img: "https://img.icons8.com/color/144/000000/css3.png"
+
+        },
+        {
+          label: 'javascript',
+          img: "https://img.icons8.com/color/144/000000/javascript.png"
+
+
+        },
+        {
+          label: 'bootstrap',
+          img: "https://img.icons8.com/color/144/000000/bootstrap.png"
+
+        },
+        {
+          label: "react/react-native",
+          img: "https://img.icons8.com/color/144/000000/react-native.png"
+
+        },
+        {
+          label: "node.js",
+          img: "https://img.icons8.com/color/144/000000/nodejs.png"
+
+        },
+        {
+          label: "flutter",
+          img: "https://img.icons8.com/color/144/000000/flutter.png"
+        }
+      ]
+    };
+  }
+
+  render() {
+    const skills = this.state.tech.map(item => (
+      <div className="col-sm-12 col-md-2">
+        <div className="skill-container">
+          <div className="label">{item.label}</div>
+          <img src={item.img}></img>
         </div>
-      </Fade>
-    </>
-  );
+      </div>
+    ));
+    return (
+      <>
+        <Fade in>
+          <div className="skills-container">
+            <div className="row">
+              {skills}
+            </div>
+          </div>
+        </Fade>
+      </>
+    );
+  }
+
 }
 
 export default Skills;
