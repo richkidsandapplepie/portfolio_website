@@ -16,7 +16,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <div className="container">
-          <div className="title">richard kwon / web developer</div>
+          <div className="title">richard kwon / web + mobile developer</div>
           <div className="link-container">
             <NavLink className="nav-link" to="/home" activeStyle={{
               color: "white"

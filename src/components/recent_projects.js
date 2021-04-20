@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import {
+  Card, CardImg, CardText, CardBody,
+  CardTitle, CardSubtitle, Button
+} from 'reactstrap';
 import '../css/recent.css';
 
 const PROJECTS = [
@@ -32,9 +36,15 @@ class RecentProjects extends Component {
     if (project) {
       return (
         <>
-          <div>{project.title}</div>
-          <div>{project.image}</div>
-          <div>{project.overview}</div>
+          <Card>
+            <CardImg top width="100%" src={project.image} alt="Card image cap" />
+            <CardBody>
+              <CardTitle tag="h5">{project.title}</CardTitle>
+              <CardSubtitle tag="h6" className="mb-2 text-muted">Stack: </CardSubtitle>
+              <CardText>{project.overview}</CardText>
+              <Button outline color="secondary">go to website</Button>
+            </CardBody>
+          </Card>
         </>
       );
     } else {
