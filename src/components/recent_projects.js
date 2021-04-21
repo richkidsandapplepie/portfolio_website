@@ -14,12 +14,12 @@ const PROJECTS = [
   {
     title: "tallyup",
     overview: "game night managing app",
-    image: "./images_1.jpg"
+    image: "./images/tallyup_logo.png"
   },
   {
     title: "whatsyourfitness",
     overview: "fitness calculator",
-    image: "./images_1.jpg"
+    image: "./images/wyf_logo.jpg"
   }
 ];
 
@@ -36,15 +36,15 @@ class RecentProjects extends Component {
     if (project) {
       return (
         <>
-          <Card>
-            <CardImg top width="100%" src={project.image} alt="Card image cap" />
-            <CardBody>
-              <CardTitle tag="h5">{project.title}</CardTitle>
-              <CardSubtitle tag="h6" className="mb-2 text-muted">Stack: </CardSubtitle>
-              <CardText>{project.overview}</CardText>
-              <Button outline color="secondary">go to website</Button>
-            </CardBody>
-          </Card>
+          <div className="col-md-3">
+            <img src={project.image}></img>
+          </div>
+          <div className="col-md-3">
+            {project.title}
+            <p>Stack: </p>
+            <p>{project.overview}</p>
+            <Button outline color="secondary">go to website</Button>
+          </div>
         </>
       );
     } else {
@@ -63,14 +63,12 @@ class RecentProjects extends Component {
       <>
         <div className="container list-container">
           <div className="row">
-            <div className="col-md-3 list">
+            <div className="col-md-4 list">
               <div className="list-item" onClick={() => this.selectProject('moviebuff')}>moviebuff</div>
               <div className="list-item" onClick={() => this.selectProject('tallyup')}>tallyup</div>
               <div className="list-item" onClick={() => this.selectProject('whatsyourfitness')}>what's your fitness</div>
             </div>
-            <div className="col-md-9">
-              {this.renderSelectedProject(this.state.selectedProject)}
-            </div>
+            {this.renderSelectedProject(this.state.selectedProject)}
           </div>
         </div>
       </>
