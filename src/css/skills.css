@@ -31,4 +31,5 @@ img {
 
 .skill-container:hover img {
   opacity: 0.1;
+  transition: opacity 1s linear;
 }

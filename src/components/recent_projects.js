@@ -4,6 +4,7 @@ import {
   CardTitle, CardSubtitle, Button
 } from 'reactstrap';
 import '../css/recent.css';
+import { Fade, Stagger } from 'react-animation-components';
 
 const PROJECTS = [
   {
@@ -28,7 +29,7 @@ class RecentProjects extends Component {
     super(props);
     this.state = {
       projects: PROJECTS,
-      selectedProject: null
+      selectedProject: null,
     }
   }
 
@@ -37,7 +38,7 @@ class RecentProjects extends Component {
       return (
         <>
           <div className="col-md-3">
-            <img src={project.image}></img>
+            <img className="projectImg" src={project.image}></img>
           </div>
           <div className="col-md-3">
             {project.title}
@@ -61,16 +62,23 @@ class RecentProjects extends Component {
   render() {
     return (
       <>
-        <div className="container list-container">
-          <div className="row">
-            <div className="col-md-4 list">
-              <div className="list-item" onClick={() => this.selectProject('moviebuff')}>moviebuff</div>
-              <div className="list-item" onClick={() => this.selectProject('tallyup')}>tallyup</div>
-              <div className="list-item" onClick={() => this.selectProject('whatsyourfitness')}>what's your fitness</div>
+        <Fade in>
+          <div className="container list-container">
+            <div className="row">
+              <div className="col-md-4 list">
+                <Stagger in>
+                  {PROJECTS.map(project =>
+                    <Fade in>
+                      <div className="list-item" onClick={() => this.selectProject(project.title)}>{project.title}</div>
+                    </Fade>
+                  )
+                  }
+                </Stagger>
+              </div>
+              {this.renderSelectedProject(this.state.selectedProject)}
             </div>
-            {this.renderSelectedProject(this.state.selectedProject)}
           </div>
-        </div>
+        </Fade>
       </>
     );
   }

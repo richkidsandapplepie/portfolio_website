@@ -11,7 +11,7 @@
   cursor: crosshair;
 }
 
-img {
-  width: 100%;
+.projectImg {
+  width: 50%;
   height: auto;
 }
