@@ -44,7 +44,7 @@ class RecentProjects extends Component {
             {project.title}
             <p>Stack: </p>
             <p>{project.overview}</p>
-            <Button outline color="secondary">go to website</Button>
+            <div className="link-button">go to website</div>
           </div>
         </>
       );
