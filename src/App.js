@@ -19,16 +19,20 @@ function App() {
           <div className="title">richard kwon / web + mobile developer</div>
           <div className="link-container">
             <NavLink className="nav-link" to="/home" activeStyle={{
-              color: "white"
+              fontWeight: "bold",
+              color: "black"
             }}>about</NavLink>
             <NavLink className="nav-link" to="./recent_projects" activeStyle={{
-              color: "white"
+              fontWeight: "bold",
+              color: "black"
             }}>recent projects</NavLink>
             <NavLink className="nav-link" to="./skills" activeStyle={{
-              color: "white"
+              fontWeight: "bold",
+              color: "black"
             }}>skills</NavLink>
             <NavLink className="nav-link" to="./contact" activeStyle={{
-              color: "white"
+              fontWeight: "bold",
+              color: "black"
             }}>contact</NavLink>
           </div>
           <div className="row main-row">

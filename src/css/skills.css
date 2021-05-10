@@ -21,7 +21,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: transparent;
-  color: white;
+  color: rgb(31, 31, 31);
   font-weight: bold;
 }
 
@@ -31,5 +31,5 @@ img {
 
 .skill-container:hover img {
   opacity: 0.1;
-  transition: opacity 1s linear;
+  transition: opacity 0.2s linear;
 }

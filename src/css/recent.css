@@ -2,29 +2,21 @@
   margin-top: 50px;
 }
 
-.list-item {
-  color:white;
-}
-
-.list-item:hover {
-  color:blanchedalmond;
-  cursor: crosshair;
-}
-
 .projectImg {
-  width: 50%;
+  width: 100%;
   height: auto;
-  border: 1px solid white;
 }
 
-.link-button {
-  padding: 15px;
-  border: 1px solid white;
-  font-weight: bold;
-  border-radius: 0;
-  color: rgb(255, 255, 255);
+.row {
+  margin-bottom: 40px;
 }
 
-.link-button:hover {
+.title {
+  color: black;
   cursor: pointer;
+  font-weight: bold;
+}
+
+.title:hover {
+  color: rgb(110, 110, 110);
 }

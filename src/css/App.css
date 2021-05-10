@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .App {
-  color: white;
+  color: rgb(31, 31, 31);
   margin-top: 50px;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Poppins', sans-serif;
 }
 
 .main-row {
@@ -15,12 +18,12 @@
 }
 
 .nav-link {
-  color: rgb(173, 173, 173);
+  color: black;
   /* font-family: 'Noto Sans', sans-serif; */
 }
 
 .nav-link:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(95, 95, 95);
 }
 
 .nav-link {
