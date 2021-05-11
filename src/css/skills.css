@@ -1,5 +1,4 @@
 .skills-container {
-  margin-top: 100px;
   display: flex;
 }
 
@@ -32,4 +31,9 @@ img {
 .skill-container:hover img {
   opacity: 0.1;
   transition: opacity 0.2s linear;
+}
+
+.skills-label {
+  text-align: center;
+  margin-top: 100px;
 }

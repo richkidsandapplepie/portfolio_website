@@ -48,16 +48,17 @@ class Skills extends Component {
 
   render() {
     const skills = this.state.tech.map(item => (
-        <div className="skill-container">
-          <div className="label">{item.label}</div>
-          <img src={item.img}></img>
-        </div>
+      <div className="skill-container">
+        <div className="label">{item.label}</div>
+        <img src={item.img}></img>
+      </div>
     ));
     return (
       <>
         <Fade in>
+          <div className="skills-label">Technologies I've been working with recently:</div>
           <div className="skills-container">
-              {skills}
+            {skills}
           </div>
         </Fade>
       </>

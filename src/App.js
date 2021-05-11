@@ -9,9 +9,14 @@ import { NavLink } from 'react-router-dom';
 function App() {
   const HomePage = () => {
     return (
-      <div className="home-container">I'm a software developer.</div>
+      <div className="home-container">
+        <p>I am a front-end and mobile developer in Houston, Texas.</p>
+        <p>I am passionate in creating new and exciting technologies that help people.</p>
+        <div className="contact-btn">hit me up!</div>
+      </div>
     );
   }
+
   return (
     <BrowserRouter>
       <div className="App">

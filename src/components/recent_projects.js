@@ -90,18 +90,8 @@ class RecentProjects extends Component {
   render() {
     return (
       <>
+        <div className="page-title">Some Things I've Built:</div>
         <div className="container list-container">
-          {/* <div className="col-md-4 list">
-              <Stagger in>
-                {PROJECTS.map(project =>
-                  <Fade in>
-                    <div className="list-item" onClick={() => this.selectProject(project.title)}>{project.title}</div>
-                  </Fade>
-                )
-                }
-              </Stagger>
-            </div> */}
-          {/* {this.renderSelectedProject(this.state.selectedProject)} */}
           <Stagger in>
             {PROJECTS.map(project => {
               return (
