@@ -1,8 +1,4 @@
 import React, { Component } from 'react';
-import {
-  Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button
-} from 'reactstrap';
 import '../css/recent.css';
 import { Fade, Stagger } from 'react-animation-components';
 
@@ -32,12 +28,10 @@ class RecentProjects extends Component {
     super(props);
     this.state = {
       projects: PROJECTS,
-      selectedProject: null,
     }
   }
 
   renderSelectedProject(project) {
-    const selectedProject = this.state.selectedProject;
     if (project) {
       return (
         <>
