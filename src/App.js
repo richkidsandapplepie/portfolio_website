@@ -12,7 +12,7 @@ function App() {
       <div className="home-container">
         <p>I am a front-end and mobile developer in Houston, Texas.</p>
         <p>I am passionate in creating new and exciting technologies that help people.</p>
-        <div className="contact-btn">hit me up!</div>
+        {/* <div className="contact-btn">hit me up!</div> */}
       </div>
     );
   }
