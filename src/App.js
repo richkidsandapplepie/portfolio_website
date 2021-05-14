@@ -18,7 +18,7 @@ function App() {
             <br></br>
             <p>I am a full-stack and mobile developer</p>
             <p>passionate in creating new and exciting technologies that help people.</p>
-            <div className="contact-btn">Connect</div>
+            {/* <div className="contact-btn">Connect</div> */}
           </div>
         </Fade>
         <div className="skills-block">
