@@ -35,17 +35,17 @@
   justify-content: center;
 }
 
-.title {
+.web-title {
   text-align: center;
 }
 
 .home-container {
-  margin-top: 10%;
+  padding-top: 100px;
   text-align: center;
-}
+} 
 
 .contact-btn {
-  margin-top: 15px;
+  margin-top: 40px;
   margin-right: 40%;
   margin-left: 40%;
   border-radius: 30px;
@@ -53,8 +53,14 @@
   padding: 5px 15px 5px 15px;
   font-weight: bold;
   transition: border-radius 0.3s linear;
+  cursor: pointer;
 }
 
 .contact-btn:hover {
   border-radius: 0px;
+}
+
+.skills-block {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }

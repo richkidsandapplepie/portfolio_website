@@ -92,14 +92,18 @@ class RecentProjects extends Component {
                 <Fade in>
                   <div className="row">
                     <div className="col-md-3"></div>
-                    <div key={project.id} className="col-md-3">
-                      <img className="projectImg project-card" src={project.image}></img>
-                    </div>
-                    <div className="col-md-3">
-                      <a className="title">{project.title}</a>
-                      <hr></hr>
-                      <p>Stack: </p>
-                      <p>{project.overview}</p>
+                    <div key={project.id} className="col-md-6">
+                      <div class="row project-card">
+                        <div class="col-md-6">
+                          <img className="projectImg" src={project.image}></img>
+                        </div>
+                        <div class="col-md-6">
+                          <a className="title">{project.title}</a>
+                          <hr></hr>
+                          <p>Stack: </p>
+                          <p>{project.overview}</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </Fade>
