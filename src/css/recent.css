@@ -19,7 +19,7 @@
 }
 
 .title {
-  color: black;
+  color: rgb(69, 0, 197);
   cursor: pointer;
   font-weight: bold;
 }
@@ -31,4 +31,8 @@
 .page-title {
   text-align: center;
   font-weight: bold;
+}
+
+.details {
+  font-size: small;
 }
