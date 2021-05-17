@@ -5,10 +5,10 @@ import { Fade, Stagger } from 'react-animation-components';
 const PROJECTS = [
   {
     id: 0,
-    title: "minimoviebuff",
+    title: "moviebuff",
     overview: "movie website",
-    image: "./images/tallyup_logo.png",
-    link: "https://play.google.com/store/apps/details?id=io.cazjapp.tallyup"
+    image: "./images/moviebuff_logo.png",
+    link: "https://eager-saha-a1ecac.netlify.app"
   },
   {
     id: 1,
@@ -54,7 +54,7 @@ class RecentProjects extends Component {
                           <a href={project.link} target="_blank" 
                           className="title">{project.title}</a>
                           <hr></hr>
-                          <p className="details"><strong>Stack: </strong></p>
+                          {/* <p className="details"><strong>Stack: </strong></p> */}
                           <p className="details">{project.overview}</p>
                         </div>
                       </div>
