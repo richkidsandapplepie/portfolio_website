@@ -14,8 +14,8 @@ function App() {
       <>
         <Fade in>
           <div className="home-container">
-            <h1><strong>Welcome to my portfolio website!</strong></h1>
-            <br></br>
+            <div className="header-title">Welcome to my portfolio website!</div>
+            <hr class="line"></hr>
             <p>I am a full-stack and mobile developer</p>
             <p>passionate in creating new and exciting technologies that help people.</p>
             {/* <div className="contact-btn">Connect</div> */}
@@ -26,7 +26,6 @@ function App() {
         </div>
         <RecentProjects />
         <Contact />
-
       </>
     );
   }

@@ -8,7 +8,6 @@ function Contact() {
       <Fade in>
         <div className="contact-container">
           <p>richardhkwon@gmail.com</p>
-          <p>LinkedIn</p>
         </div>
       </Fade>
     </>
