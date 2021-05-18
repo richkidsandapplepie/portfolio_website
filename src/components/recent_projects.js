@@ -6,7 +6,7 @@ const PROJECTS = [
   {
     id: 0,
     title: "moviebuff",
-    overview: "A simple movie search website using to demonstrate React and the TMDB database.",
+    overview: "A simple movie search website demonstrating React and the TMDB API.",
     image: "./images/moviebuff_logo.png",
     link: "https://eager-saha-a1ecac.netlify.app"
   },
