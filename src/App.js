@@ -14,10 +14,11 @@ function App() {
       <>
         <Fade in>
           <div className="home-container">
-            <div className="header-title">Welcome to my portfolio website!</div>
+            <div className="header-title">Welcome to my portfolio!</div>
             <hr class="line"></hr>
-            <p>I am a full-stack and mobile developer</p>
-            <p>passionate in creating new and exciting technologies that help people.</p>
+            <p>• Follow my programming journey</p>
+            <p>• I am a front-end and mobile developer</p>
+            <p>• Looking for opportunities to make an impact</p>
             {/* <div className="contact-btn">Connect</div> */}
           </div>
         </Fade>
@@ -34,7 +35,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <div className="container">
-          <div className="web-title">richard kwon / web + mobile developer</div>
+          <div className="web-title"><strong>richard kwon / web + mobile developer</strong></div>
           <div className="link-container">
             <NavLink className="nav-link" to="/home" activeStyle={{
               fontWeight: "bold",
