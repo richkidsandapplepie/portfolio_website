@@ -9,9 +9,9 @@
 
 .project-card {
   padding: 30px 40px 30px 40px;
-  border: 1px solid rgb(189, 189, 189);
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 30px;
-  box-shadow: 0 4px 8px 0 rgba(245, 245, 245, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(170, 170, 170, 0.5);
   transition: 0.6s;
 }
 
@@ -44,4 +44,10 @@
 .details {
   font-size: small;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 700px) {
+  .projectImg {
+    padding: 50px;
+  }
 }

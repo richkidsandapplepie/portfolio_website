@@ -30,40 +30,33 @@ function App() {
       </>
     );
   }
+  const Header = () => {
+    return (
+      <>
+        <div className="web-title"><strong>richard kwon / web + mobile developer</strong></div>
+        <div className="link-container">
+          <NavLink className="nav-link" to="/home" activeStyle={{
+            fontWeight: "bold",
+            color: "black"
+          }}>home</NavLink>
+          <NavLink className="nav-link" to="./tutorials" activeStyle={{
+            fontWeight: "bold",
+            color: "black"
+          }}>tutorials</NavLink>
+        </div>
+      </>
+    );
+  }
 
   return (
     <BrowserRouter>
       <div className="App">
         <div className="container">
-          <div className="web-title"><strong>richard kwon / web + mobile developer</strong></div>
-          <div className="link-container">
-            <NavLink className="nav-link" to="/home" activeStyle={{
-              fontWeight: "bold",
-              color: "black"
-            }}>home</NavLink>
-            {/* <NavLink className="nav-link" to="./recent_projects" activeStyle={{
-              fontWeight: "bold",
-              color: "black"
-            }}>recent projects</NavLink>
-            <NavLink className="nav-link" to="./skills" activeStyle={{
-              fontWeight: "bold",
-              color: "black"
-            }}>skills</NavLink>
-            <NavLink className="nav-link" to="./contact" activeStyle={{
-              fontWeight: "bold",
-              color: "black"
-            }}>contact</NavLink> */}
-            <NavLink className="nav-link" to="./tutorials" activeStyle={{
-              fontWeight: "bold",
-              color: "black"
-            }}>tutorials</NavLink>
-          </div>
+          <Header />
           <div className="row main-row">
             <div className="col">
               <Switch>
                 <Route path='/home' component={HomePage} />
-                {/* <Route path='/recent_projects' component={RecentProjects} />
-                <Route path='/skills' component={Skills} /> */}
                 <Route path='/tutorials' component={Tutorials} />
                 <Redirect to='/home' />
               </Switch>
